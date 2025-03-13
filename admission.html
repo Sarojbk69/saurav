@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Admission - Shree Panchayat Secondary School</title>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="index.html" class="logo-link">
+                <img class="logo" src="images/logo.png" alt="School Logo">
+            </a>
+            <div>
+                <div class="school-name">Shree Panchayat Secondary School</div>
+                <div class="school-name-small">Pathari, Morang</div>
+            </div>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="course.html">Courses</a></li>
+            <li><a href="admission.html">Admission</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1>Admission Application</h1>
+        <p>Fill out the form below to apply for admission to Shree Panchayat Secondary School. We look forward to welcoming you to our community.</p>
+    </div>
+
+    <!-- Admission Form Section -->
+    <div class="form-container">
+        <h2>Student Information</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="fullName" class="required">Full Name</label>
+                <div class="input-icon">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="dob" class="required">Date of Birth</label>
+                <div class="input-icon">
+                    <i class="fas fa-calendar-alt"></i>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="gender" class="required">Gender</label>
+                <div class="input-icon">
+                    <i class="fas fa-venus-mars"></i>
+                    <select id="gender" name="gender" required>
+                        <option value="" disabled selected>Select your gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="address" class="required">Address</label>
+                <textarea id="address" name="address" placeholder="Enter your complete address" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="contactNumber" class="required">Contact Number</label>
+                <div class="input-icon">
+                    <i class="fas fa-phone"></i>
+                    <input type="tel" id="contactNumber" name="contactNumber" placeholder="Enter your 10-digit phone number" pattern="[0-9]{10}" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="required">Email Address</label>
+                <div class="input-icon">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="grade" class="required">Grade Applying For</label>
+                <div class="input-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                    <input type="number" id="grade" name="grade" min="1" max="12" placeholder="Enter grade (1-12)" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="previousSchool">Previous School (if any)</label>
+                <input type="text" id="previousSchool" name="previousSchool" placeholder="Enter your previous school name">
+            </div>
+
+            <div class="submit-btn">
+                <button type="submit">Submit Application</button>
+            </div>
+        </form>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
